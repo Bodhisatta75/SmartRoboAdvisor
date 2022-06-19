@@ -36,7 +36,14 @@ def check_all_messages(message):
         highest_prob_list[bot_response] = message_probability(message, list_of_words, single_response, required_words)
 
     # Responses -------------------------------------------------------------------------------------------------------
-    response('Hello!', ['hello', 'hi', 'hey', 'sup', 'heyo'], single_response=True)
+    response('Hello!How may I help you ?', ['hello', 'hi', 'hey', 'sup', 'heyo'], single_response=True)
+    response('Which transport service you want ? Air/Train/Bus/Taxi ?', ['book', 'reservation', 'seat', 'reserve'], single_response=True)
+    response('Ok great ! Could you please give your current location and destination ?', ['Taxi', 'taxy'], single_response=True)
+    response('Ok great ! Could you please give your Start location/city and Destination  ?', ['Bus', 'bus'], single_response=True)
+    response('Ok great ! Could you please give your Start location/city and Destination  ?', ['Train', 'train'], single_response=True)
+    response('Ok great ! Could you please give your Start location/city and Destination  ?', ['air', 'Air'], single_response=True)
+   
+
     response('See you!', ['bye', 'goodbye'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
     response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
