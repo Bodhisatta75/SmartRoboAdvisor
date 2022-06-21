@@ -38,14 +38,18 @@ def check_all_messages(message):
     # Responses -------------------------------------------------------------------------------------------------------
     response('Hello!How may I help you ?', ['hello', 'hi', 'hey', 'sup', 'heyo'], single_response=True)
     response('Which transport service you want ? Air/Train/Bus/Taxi ?', ['book', 'reservation', 'seat', 'reserve'], single_response=True)
-    response('Ok great ! Could you please give your current location and destination ?', ['Taxi', 'taxy'], single_response=True)
-    response('Ok great ! Could you please give your Start location/city and Destination  ?', ['Bus', 'bus'], single_response=True)
-    response('Ok great ! Could you please give your Start location/city and Destination  ?', ['Train', 'train'], single_response=True)
-    response('Ok great ! Could you please give your Start location/city and Destination  ?', ['air', 'Air'], single_response=True)
-   
-
+    response('Ok great ! Could you please give your current location and destination?', ['Taxi', 'taxy'], single_response=True)
+    response('Ok great ! Could you please give your Start location/city and Destination?', ['Bus', 'bus'], single_response=True)
+    response('Ok great ! Could you please give your Start location/city and Destination?', ['Train', 'train'], single_response=True)
+    response('Ok great ! Could you please give your Start location/city and Destination?', ['air', 'Air'], single_response=True)
+    response('Could you please give me your resevation number?', ['change', 'cancel', 'refund'], single_response=True)
+    response('Could you please give me your refund confirmation number?', ['I', 'want', 'to', 'change'], required_words=['refund'])
+    response('Yes ! We have some exclusive offer for frequent traveller like you?', ['offer', 'discount'], single_response=True)
+    response('We allow kids for free (0-5 years), 5-12 years will have to pay 50% ?', ['kid'], single_response=True)
+    response('Yes ! You are allowed to take pet with you ?', ['pet'], single_response=True)
+    response('We provide veg and non-veg, which one is your preferred manue?', ['food'], single_response=True)
+    response('', ['how', 'are', 'you', 'doing'], required_words=['how'])
     response('See you!', ['bye', 'goodbye'], single_response=True)
-    response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
     response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
     response('Thank you!', ['i', 'love', 'code', 'palace'], required_words=['code', 'palace'])
 
