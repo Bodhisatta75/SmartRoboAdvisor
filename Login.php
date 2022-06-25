@@ -1,4 +1,5 @@
 <!Doctype html>
+
 <html>
     <head>
         <title> Login Fork </title>
@@ -7,12 +8,12 @@
     <body>  
         <div class="Login Form">
             <h1>Login Form</h1>
-            <form action="#" method="post">
+            <form action="./redirect.php" method="post">
                 <p>User Name</p>
                 <input type="text" name="user" placeholder="User Name">
                 <p>Password</p>
                 <input type="password" name="password" placeholder="Password">
-                <button type="submit">Login</button>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </body>
